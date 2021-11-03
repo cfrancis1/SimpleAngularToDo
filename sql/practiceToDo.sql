@@ -1,0 +1,10 @@
+DROP DATABASE IF EXISTS practiceToDo;
+
+CREATE DATABASE practiceToDo;
+
+USE practiceToDo;
+
+CREATE TABLE todos (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	task VARCHAR(255)
+);
