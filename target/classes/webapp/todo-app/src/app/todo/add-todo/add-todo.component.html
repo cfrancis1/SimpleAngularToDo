@@ -1,8 +1,8 @@
-<div class="col-md-6 user-container" align='center'>
-    <h2 class="text-center">Add To-Do</h2>
+<div class="col-md-4 user-container text-center offset-md-4">
+    <h3 class="text-center">Add To-Do</h3>
     <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
         <div class="form-group">
-            <label for="task">Task:</label>
+            <label for="task">To-Do: </label>
             <input type="text" formControlName="task" placeholder="Task" name="task" class="form-control"
                    id="task">
         </div>

@@ -1,24 +1,26 @@
-<div align='center'><h1>Practice To-Do (with Angular)</h1></div>
-
 <div align='center'>
+  <h1>Practice Angular To-Do</h1>
+</div>
+
+<div class="col-md-6 user-container text-center offset-md-3">
+  <br>
+  <h2>List</h2>
+  <br>
   <table class="table">
-    <tr>
-      <th>To-Do</th>
-      <th></th>
-    </tr>
     <tr *ngFor="let todo of todos">
-      <td>
+      <td style="padding-right: 30px">
         {{todo.task}}
       </td>
       <td>
-        <button type="button" (click)="deleteToDo(todo)">Delete</button>
+        <button (click)="deleteToDo(todo)" class="btn btn-outline-danger">Delete</button>
       </td>
     </tr>
   </table>
 </div>
+
 <div align='center'>
   <p>
-    <button (click)="addToDo()"> Add To-Do</button>
+    <button (click)="addToDo()" class="btn btn-primary">Add To-Do</button>
   </p>
 </div>
 <router-outlet></router-outlet>
